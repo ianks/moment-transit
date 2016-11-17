@@ -8,15 +8,15 @@ chai.use(require('sinon-chai'));
 
 describe('moment-transit', () => {
    it('serializes a moment', () => {
-      const date = moment('1999-12-31');
+      const date = moment.utc('1999-12-31');
       const serialized = writer.write(date);
 
-      expect(serialized).to.eql('{"~#moment":"1999-12-31T00:00:00-05:00"}');
+      expect(serialized).to.eql('{"~#moment":"1999-12-31T00:00:00Z"}');
    });
 
    it('deserializes a moment', () => {
-      const date = moment('1999-12-31');
-      const serialized = '{"~#moment":"1999-12-31T00:00:00-05:00"}';
+      const date = moment.utc('1999-12-31');
+      const serialized = '{"~#moment":"1999-12-31T00:00:00Z"}'
       const deserialized = reader.read(serialized);
 
       expect(date.isSame(deserialized)).to.equal(true);
