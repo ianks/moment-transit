@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/moment-transit.svg)](https://badge.fury.io/js/moment-transit)
 [![Build Status](https://travis-ci.org/ianks/moment-transit.svg?branch=master)](https://travis-ci.org/ianks/moment-transit)
 
 # moment-transit
