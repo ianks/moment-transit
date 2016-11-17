@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ianks/moment-transit.svg?branch=master)](https://travis-ci.org/ianks/moment-transit)
+
 # moment-transit
 
 A library which enables Moment objects to be serialized by
